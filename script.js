@@ -59,7 +59,7 @@ requestAnimationFrame(animate);
   const statusEl = document.getElementById('status');
   if (!statusEl) return;
 
-  const words = ['B.Tech Student', 'Web Developer', 'Game Developer'];
+  const words = ['B.Tech Student', 'Web Developer', 'Ethical Hacker'];
   const typeSpeed = 180; 
   const deleteSpeed = 180; 
   const pauseBetween = 1400;
