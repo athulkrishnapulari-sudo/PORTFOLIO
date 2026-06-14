@@ -15,9 +15,9 @@
             <ul class="navlinks">
                 <li class="link"><a href="#">Home</a></li>
                 <li class="link"><a href="#about">About</a></li>
-                <li class="link"><a href="">Works</a></li>
-                <li class="link"><a href="">Skills</a></li>
-                <li class="link"><a href="">Contact</a></li>
+                <li class="link"><a href="#projects">Projects</a></li>
+                <li class="link"><a href="#skills">Skills</a></li>
+                <li class="link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -84,7 +84,9 @@
         <div id="lightblue"></div>
     </section>
     <section id="about">
-        <h2 id="about_head">About <span style="background: linear-gradient(to right,#7c7ee9 ,#81d2e0);color:transparent;background-clip: text;">Me</span></h2>
+        <h2 id="about_head">About <span
+                style="background: linear-gradient(to right,#7c7ee9 ,#81d2e0);color:transparent;background-clip: text;">Me</span>
+        </h2>
         <div id="about_container">
             <img id="about_image" src="assets/images/athul.jpg" alt="">
             <div id="aboutme">
@@ -102,6 +104,219 @@
                     When I'm not coding, I'm exploring the latest technologies, contributing to open-source projects, or
                     architecting solutions that make a real-world impact.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 id="skills_head">Technical <span
+                style="background: linear-gradient(to right,#7c7ee9 ,#81d2e0);color:transparent;background-clip: text;">Skills</span>
+        </h2>
+        <div id="skills_container">
+            <div id="skill_group">
+                <div class="track">
+                    <div id="skill1" class="skill">
+                        <div class="skill_cont">
+                            <img src="assets/images/html_logo.png" alt="HTML5 Logo">
+                            <div class="progress-circle" style="--pct:95; --accent: #f97316;"><span
+                                    class="pct">95%</span></div>
+                        </div>
+                        <h2>HTML</h2>
+                        <p class="skill-info">Semantic markup, accessibility (a11y), and SEO-friendly structure.</p>
+                    </div>
+                    <div id="skill2" class="skill">
+                        <div class="skill_cont">
+                            <img src="assets/images/css_logo.png" alt="CSS3 Logo">
+                            <div class="progress-circle" style="--pct:90; --accent: #2563eb;"><span
+                                    class="pct">90%</span></div>
+                        </div>
+                        <h2>CSS</h2>
+                        <p class="skill-info">Responsive layouts, Flexbox & Grid, animations and performance optimizations.</p>
+                    </div>
+                    <div id="skill3" class="skill">
+                        <div class="skill_cont">
+                            <img src="assets/images/js_logo.png" alt="JavaScript Logo">
+                            <div class="progress-circle" style="--pct:85; --accent: #f59e0b;"><span
+                                    class="pct">85%</span></div>
+                        </div>
+                        <h2>JavaScript</h2>
+                        <p class="skill-info">Modern JS (ES6+), DOM manipulation, Fetch API and async patterns.</p>
+                    </div>
+                    <div id="skill4" class="skill">
+                        <div class="skill_cont">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                                alt="Python Logo">
+                            <div class="progress-circle" style="--pct:75; --accent: #06b6d4;"><span
+                                    class="pct">75%</span></div>
+                        </div>
+                        <h2>Python</h2>
+                        <p class="skill-info">Scripting, automation, and data-processing with readable, maintainable code.</p>
+                    </div>
+                    <div id="skill5" class="skill">
+                        <div class="skill_cont">
+                            <img src="assets/images/c_logo.png" alt="C Logo">
+                            <div class="progress-circle" style="--pct:60; --accent: #3a55ed;"><span
+                                    class="pct">60%</span></div>
+                        </div>
+                        <h2>C</h2>
+                        <p class="skill-info">Procedural programming, low-level concepts and algorithmic thinking.</p>
+                    </div>
+                    <div id="skill6" class="skill">
+                        <div class="skill_cont">
+                            <img src="assets/images/bootstrap_logo.png" alt="Bootstrap Logo">
+                            <div class="progress-circle" style="--pct:80; --accent: #7c3aed;"><span
+                                    class="pct">80%</span></div>
+                        </div>
+                        <h2>Bootstrap</h2>
+                        <p class="skill-info">Rapid layouts using components, utilities and responsive grid systems.</p>
+                    </div>
+                    <div id="skill7" class="skill">
+                        <div class="skill_cont">
+                            <img src="assets/images/figma_logo.png" alt="Figma Logo">
+                            <div class="progress-circle" style="--pct:70; --accent: #f43f5e;"><span
+                                    class="pct">70%</span></div>
+                        </div>
+                        <h2>Figma</h2>
+                        <p class="skill-info">UI design, prototyping and handoff-ready visuals for developers.</p>
+                    </div>
+                    <div id="skill8" class="skill">
+                        <div class="skill_cont">
+                            <img src="assets/images/photoshop_logo.png" alt="Photoshop Logo">
+                            <div class="progress-circle" style="--pct:65; --accent: #6366f1;"><span
+                                    class="pct">65%</span></div>
+                        </div>
+                        <h2>Photoshop</h2>
+                        <p class="skill-info">Image editing, compositing and exporting assets for web and UI use.</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 id="projects_head">Featured <span
+                style="background: linear-gradient(to right,#7c7ee9 ,#81d2e0);color:transparent;background-clip: text;">Projects</span>
+        </h2>
+        <div id="projects_container">
+            <div class="project-card">
+                <div class="top-border-glow"></div>
+
+                <h2 class="project-title">WeatherApp</h2>
+                <p class="project-description">
+                    A sleek, responsive weather dashboard featuring real-time data tracking,
+                    intelligent search suggestions, and an integrated trip planner for seamless travel prep.
+                </p>
+
+                <div class="info-block">
+                    <span class="block-label problem-label">PROBLEM</span>
+                    <p class="block-text">Users lack a consolidated, visually intuitive interface to plan travel routes
+                        alongside real-time weather changes.</p>
+                </div>
+
+                <div class="info-block">
+                    <span class="block-label solution-label">SOLUTION</span>
+                    <p class="block-text">A modern grid-based dashboard utilizing live API feeds and predictive planning
+                        tools.</p>
+                </div>
+
+                <div class="tech-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">OpenWeather API</span>
+                </div>
+
+                <div class="card-actions">
+                    <a href="https://athulkrishnapulari-sudo.github.io/WEATHERAPP/" class="btn-live">Live Demo <span
+                            class="arrow">↗</span></a>
+                    <a href="https://github.com/athulkrishnapulari-sudo/WEATHERAPP/" class="btn-github"
+                        aria-label="GitHub Repository">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="top-border-glow"></div>
+
+                <h2 class="project-title">WeatherApp</h2>
+                <p class="project-description">
+                    A sleek, responsive weather dashboard featuring real-time data tracking,
+                    intelligent search suggestions, and an integrated trip planner for seamless travel prep.
+                </p>
+
+                <div class="info-block">
+                    <span class="block-label problem-label">PROBLEM</span>
+                    <p class="block-text">Users lack a consolidated, visually intuitive interface to plan travel routes
+                        alongside real-time weather changes.</p>
+                </div>
+
+                <div class="info-block">
+                    <span class="block-label solution-label">SOLUTION</span>
+                    <p class="block-text">A modern grid-based dashboard utilizing live API feeds and predictive planning
+                        tools.</p>
+                </div>
+
+                <div class="tech-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">OpenWeather API</span>
+                </div>
+
+                <div class="card-actions">
+                    <a href="https://athulkrishnapulari-sudo.github.io/WEATHERAPP/" class="btn-live">Live Demo <span
+                            class="arrow">↗</span></a>
+                    <a href="https://github.com/athulkrishnapulari-sudo/WEATHERAPP/" class="btn-github"
+                        aria-label="GitHub Repository">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="top-border-glow"></div>
+
+                <h2 class="project-title">WeatherApp</h2>
+                <p class="project-description">
+                    A sleek, responsive weather dashboard featuring real-time data tracking,
+                    intelligent search suggestions, and an integrated trip planner for seamless travel prep.
+                </p>
+
+                <div class="info-block">
+                    <span class="block-label problem-label">PROBLEM</span>
+                    <p class="block-text">Users lack a consolidated, visually intuitive interface to plan travel routes
+                        alongside real-time weather changes.</p>
+                </div>
+
+                <div class="info-block">
+                    <span class="block-label solution-label">SOLUTION</span>
+                    <p class="block-text">A modern grid-based dashboard utilizing live API feeds and predictive planning
+                        tools.</p>
+                </div>
+
+                <div class="tech-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">OpenWeather API</span>
+                </div>
+
+                <div class="card-actions">
+                    <a href="https://athulkrishnapulari-sudo.github.io/WEATHERAPP/" class="btn-live">Live Demo <span
+                            class="arrow">↗</span></a>
+                    <a href="https://github.com/athulkrishnapulari-sudo/WEATHERAPP/" class="btn-github"
+                        aria-label="GitHub Repository">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

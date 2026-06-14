@@ -6,11 +6,21 @@
 
 :root{
     --hero-head:80px;
+    --skill-width: 190px;
+    --skill-gap: 40px; /* px spacing between items */
+    --skill-count: 8; /* update if you add/remove skills */
+    /* total width of one repeated track (includes gaps after each item except last) */
+    --track-width: calc(var(--skill-count) * (var(--skill-width) + var(--skill-gap)));
+    --scroll-duration: 14s;
+}
+
+html,body{
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #0f172a;
-    position: relative;
+        
     overflow-x: hidden;
 }
 header{
@@ -186,13 +196,13 @@ li:hover::after {
 
 
 #about{
-    margin-top: 20px;
+    margin-top: 50px;
     width:100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap:100px;
-    margin-bottom: 70px;
+    gap:150px;
+    margin-bottom: 150px;
 }
 
 #about_container{
@@ -229,4 +239,302 @@ li:hover::after {
     right:0;
     bottom:-10px;
     margin:0 auto;
+}
+
+#skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:150px;
+    margin-bottom: 150px;
+}
+#skills_head{
+    font-size: 54px;
+    color:white;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+#skills_head::after{
+    content: '';
+    position:absolute;
+    height:5px;
+    width: 40%;
+    background: linear-gradient(to right,#6c6dca ,#81d2e0);
+    left:0;
+    right:0;
+    bottom:-10px;
+    margin:0 auto;
+}
+
+
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    transition: transform 0.28s cubic-bezier(0.22,0.9,0.3,1), box-shadow 0.28s cubic-bezier(0.22,0.9,0.3,1);
+    flex: 1 1 180px;
+    min-width: 140px;
+    max-width: 220px;
+}
+
+#skill_group{
+    width:100%;
+    overflow: visible;
+    padding: 24px 12px;
+    display: flex;
+    justify-content: center;
+}
+#skills_container{
+    padding: 0 100px;
+}
+.track{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--skill-gap);
+    width: 100%;
+}
+
+
+.skill img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+.skill h2{
+    font-size: 18px;
+    color: #f8fafc;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+.skill_cont{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill-info{
+    font-size: 13px;
+    color: rgba(248,250,252,0.8);
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 6px;
+    max-width: 92%;
+}
+.progress-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: conic-gradient(var(--accent, #7c3aed) calc(var(--pct, 0) * 1%), #14202b 0);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.45);
+}
+
+.progress-circle::before{
+    content: '';
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #0f172a;
+    display: block;
+}
+
+.progress-circle .pct{
+    position: absolute;
+    font-size: 11px;
+    color: #f8fafc;
+    font-weight: 700;
+}
+
+.skill:hover{
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45), 0 4px 12px rgba(124,58,237,0.08);
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 100px;
+    gap:150px;
+    margin-bottom: 100px;
+}
+#projects_container{
+    display:flex;
+    gap:30px;
+}
+
+#projects_head{
+    font-size: 54px;
+    color:white;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+#projects_head::after{
+    content: '';
+    position:absolute;
+    height:5px;
+    width: 40%;
+    background: linear-gradient(to right,#6c6dca ,#81d2e0);
+    left:0;
+    right:0;
+    bottom:-10px;
+    margin:0 auto;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px; 
+  background-color: #131b2e;
+  border-radius: 16px;
+  padding: 32px 24px 24px 24px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.top-border-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+#projects_container .project-card:nth-child(2) .top-border-glow {
+    background: linear-gradient(90deg, #06b6d4, #1cb5d0);
+}
+
+
+/* Typography */
+.project-title {
+  color: #f8fafc;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;
+}
+
+.project-description {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+/* Info Blocks (Problem/Solution) */
+.info-block {
+  background-color: #1a233d;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.block-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.problem-label { 
+  color: #6366f1; 
+}
+
+.solution-label { 
+  color: #06b6d4; 
+}
+
+.block-text {
+  color: #f8fafc;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tech Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.tag {
+  color: #f8fafc;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #334155;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+/* Action Footer */
+.card-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-live {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #7c3aed;
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-live:hover {
+  background-color: #6d28d9;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+}
+
+.btn-live .arrow {
+  font-size: 14px;
+}
+
+.btn-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-github:hover {
+  color: #f8fafc;
+  border-color: #94a3b8;
 }
