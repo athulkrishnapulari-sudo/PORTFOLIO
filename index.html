@@ -15,8 +15,8 @@
             <ul class="navlinks">
                 <li class="link"><a href="#">Home</a></li>
                 <li class="link"><a href="#about">About</a></li>
-                <li class="link"><a href="#projects">Projects</a></li>
                 <li class="link"><a href="#skills">Skills</a></li>
+                <li class="link"><a href="#projects">Projects</a></li>
                 <li class="link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -32,21 +32,29 @@
             contribute to impactful software engineering teams.
         </p>
         <div id="home_buttons">
-            <button id="viewWork">
+            <button id="viewWork" style="position: relative;">
                 View Work<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M2 12h20M15 5l7 7-7 7" />
                 </svg>
+                <a href="https://github.com/athulkrishnapulari-sudo"  style="width:100%;height:100%;position: absolute;background-color: transparent;color:transparent"></a>
             </button>
-            <button id="downloadResume">
+            <button id="downloadResume" style="position: relative;">
                 Download Resume
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
                 </svg>
+                <a href="assets/files/Resume (2).pdf" download="AthulKrishna_Resume.pdf" style="width:100%;height:100%;position: absolute;background-color: transparent;color:transparent"></a>
             </button>
         </div>
         <div id="links">
+            <a href="https://github.com/athulkrishnapulari-sudo" id="github" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
             <a href="" id="linkedin" class="link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -154,7 +162,7 @@
                     </div>
                     <div id="skill5" class="skill">
                         <div class="skill_cont">
-                            <img src="assets/images/c_logo.png" alt="C Logo">
+                            <img src="assets/images/C_logo.png" alt="C Logo">
                             <div class="progress-circle" style="--pct:60; --accent: #3a55ed;"><span
                                     class="pct">60%</span></div>
                         </div>
@@ -320,6 +328,142 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <h2 id="contact_head">Get in <span style="background: linear-gradient(to right,#7c7ee9 ,#81d2e0);color:transparent;background-clip: text;">Touch</span></h2>
+        <p id="contact_para">Let's discuss your next project or just say hi. I'm always open to new opportunities and collaborations.</p>
+        <div id="contact_container">
+            <div id="contact_details_container">
+                <div id="email_container" class="contact_details_cont">
+                    <div></div>
+                    <div style="gap:10px">
+                        <h7>Email</h7>
+                        <p>athulkrishnapulari@gmail.com</p>
+                    </div>
+                </div>
+                <div id="phone_container" class="contact_details_cont">
+                    <div>
+
+                    </div>
+                    <div style="gap:10px">
+                        <h7 style="font-size: 16px ;">Phone</h7>
+                        <p style="font-size: 14px;">+91 97477 89882</p>
+                    </div>
+                </div>
+                <div id="location_container" class="contact_details_cont">
+                    <div></div>
+                    <div style="gap:10px">
+                        <h7 style="font-size: 16px ;">Location</h7>
+                        <p style="font-size: 14px ;">Thiruvananthapuram, Kerala</p>
+                    </div>
+                </div>
+                <div id="availableForWork" class="contact_details_cont" style="height: 100%;">
+                    <div></div>
+                    <div style="gap:30px">
+                        <h7 style="font-size: 16px ;">Available for Work</h7>
+                        <p style="font-size: 14px ;">Currently open to full-time opportunities and interesting freelance projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="contact_form_container">
+                <form action="" id="contact_form">
+                    <div style="display: flex;justify-content: space-evenly;gap:20px;">
+                        <div id="name" style="display: flex;flex-direction: column;gap:20px;width: 100%;">
+                            <label for="name">Name</label>
+                            <input type="text" id="name_input" name="name" required>
+                        </div>
+                        <div id="email" style="display: flex;flex-direction: column;gap:20px;width: 100%;">
+                            <label for="email">Email</label>
+                            <input type="email" id="email_input" name="email" required>
+                        </div>
+                    </div>
+                    <div id="Subject" style="display: flex;flex-direction: column;gap:20px;margin-top: 20px;">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject_input" name="subject" required>
+                    </div>
+                    <div id="message" style="display: flex;flex-direction: column;gap:20px;margin-top: 20px;">
+                        <label for="message">Message</label>
+                        <textarea id="message_input" name="message" rows="5" required></textarea>
+                    </div>
+                    <button id="submit_btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 V100 H0 Z"></path>
+        </svg>
+    </div>
+
+    <footer class="footer-wave" role="contentinfo">
+        <div class="container">
+            <div class="footer-wave__main-grid">
+                <div class="footer-wave__about">
+                    <h3 class="footer-wave__heading">About Us</h3>
+                    <p>We create beautiful, modern web templates to help your projects stand out. This wave is just the beginning.</p>
+                </div>
+                <div class="footer-wave__links">
+                    <h3 class="footer-wave__heading">Navigate</h3>
+                    &nbsp;
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="social_links">
+                    <h3 class="footer-wave__heading">Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/athulkrishnapulari-sudo" id="github" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
+            <a href="" id="linkedin" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                </svg>
+            </a>
+
+            <a href="" id="instagram" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+            </a>
+
+            <a href="" id="facebook" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+            </a>
+
+            <a href="" id="twitter" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
+            </a>
+                    </div>
+
+                </div>
+                 
+            </div>
+            <div class="footer-wave__bottom">
+                <p class="footer-wave__copyright">&copy; 2026 Athul Krishna. All Rights Reserved.</p>
+                <p class="footer-wave__copyright"> Designed and developed by Athul Krishna</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
