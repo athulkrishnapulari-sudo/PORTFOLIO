@@ -64,7 +64,9 @@ function success() {
 }
 
 const scriptUrl =
-  "https://script.google.com/macros/s/AKfycbwk5bkxIvgJ75B6LSFnidw5qKfxwJD4LTxir1CNBO89VDJJGjx91Gby5lALL8JuguAP_w/exec";
+    "https://script.google.com/macros/s/AKfycbxCellDwMGgCr0EFkDgG0D4wFhynRFLADhe3hgCYT4xiEODwfItCiJzYyDtTRHJ2FxCvQ/exec";
+
+
 const form = document.getElementById("contact_form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
