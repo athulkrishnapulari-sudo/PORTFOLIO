@@ -21,7 +21,7 @@ html,body{
 
 body{
     background-color: #0f172a;
-        
+ 
     overflow-x: hidden;
 }
 
@@ -59,16 +59,18 @@ nav {
     margin: 0;
     padding: 0;
 }
-
+.link{
+    position: relative;
+}
 /* Ensure links don't wrap and cause jumping */
-li a {
+.link a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     white-space: nowrap; 
 }
 
-li::after {
+.link::after {
     content: '';
     position: absolute;
     height: 3px;
@@ -103,7 +105,7 @@ li:hover::after {
     height:400px;
     background-color: #6366f133;
     left:0;
-    top:250px;
+    top:200px;
     border-radius: 50%;
     filter: blur(90px);
 }
@@ -113,7 +115,7 @@ li:hover::after {
     height:400px;
     background-color: #06b6d433;
     right:0;
-    bottom:250px;
+    top:400px;
     filter: blur(90px);
     border-radius: 50%;
 }
@@ -206,7 +208,6 @@ li:hover::after {
 .link{
     background-color: transparent;
     color:white;
-    backdrop-filter: blur(50px);
 }
 
 
@@ -594,8 +595,9 @@ li:hover::after {
     display: flex;
     flex-direction: column;
     gap:40px;
-    min-height: 90vh;
+    min-height: 100vh;
     padding-top: 100px;
+    position: relative;
 }
 #contact_container{
     display: grid;
@@ -769,7 +771,7 @@ textarea{
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     /* 1. Prevent Horizontal Overflow globally */
     html, body {
         overflow-x: hidden !important;
@@ -869,4 +871,42 @@ textarea{
         width:300px;
         height:300px;
     }
+    #form_first_row{
+        flex-direction: column !important;
+    }
+}
+
+.success_container{
+    display: none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+.success_container p{
+    font-size: 20px;
+}
+#success{
+    background-color: rgb(83, 50, 228);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding:20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#success button{
+    width:100%;
+    padding:10px 0;
+    border-radius: 15px;
+}
+.success_container.active{
+    display: flex;
 }
